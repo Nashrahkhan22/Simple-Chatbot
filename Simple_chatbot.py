@@ -7,15 +7,16 @@
 chatbot_template = "BOT : {0}"
 user_template = "USER : {0}"
 
-
+greet="What's up?"
 name = "ChatBot"
 health = "fine"
 inp=input()
 
 # Define a dictionary with the predefined responses
 responses = {
+  "Hello":"Hey!! {0}".format(greet),
   "what's your name?": "my name is {0}".format(name),
-  "How are you?": "I am {0}".format(health),
+  "How are you?": "I am {0} .You tell?".format(health),
   "default": "Not in the list"
 }
 
